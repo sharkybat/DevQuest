@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<!-- Title -->
+		<title>DevQuest</title>
+		
+		<!-- Styles Link -->
+		<link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+		
+		<!-- Datatype Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Datatype&display=swap" rel="stylesheet">
+		
+	</head>
+	
+	<nav class='fadein'>
+		<a href="index.html">Landing Page</a>
+		<a href="accounts.html">Sign Up / Log In</a>
+	</nav>
+	
+	<body class='fadein'>
+	<h1> Login </h1>
+	<p>
+		<form action="accountValidation.php" method="post">
+		  <div class="container">
+			<label for="uname"><h3><b>Username</b></h3></label>
+			<input type="text" placeholder="Enter Username" name="uname" required>
+			<br>
+			<label for="psw"><h3><b>Password</b></h3></label>
+			<input type="password" placeholder="Enter Password" name="psw" required>
+			<br>
+			<button type="submit">Login</button>
+			<label>
+			  <input type="checkbox" checked="checked" name="remember"> Remember me
+			</label>
+		  </div>
+		</form>
+	</p>
+	</body>
