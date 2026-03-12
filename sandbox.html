@@ -23,13 +23,13 @@
 	<body>
 		<div>
 		<form id="HTMLCodeSandbox", onSubmit="updateCode(); return false;">
-			<label for="html">Script:</label><br>
+			<label>Script:</label><br>
 			<textarea rows="30" cols="60" type="text" id="codeHTML" name="codeHTML"></textarea><br><br>
 			<button type="submit">Reload Code</button>
 		</form>
 		</div>
 		<iframe id="previewFrame" title="Code Output" width="600" height="600">
-			<div id="preview"></div>
+			<!--<div id="preview"></div>-->
 		</iframe>
 	
 
@@ -39,13 +39,12 @@
 	
 			function updateCode() {
 				let code = document.getElementById("codeHTML").value;
-				//localStorage.setItem("HTMLCode", code); Hidden for now 
-				document.getElementById("preview").innerHTML = code; 
-				
+				localStorage.setItem("HTMLCode", code);
 			}
 	</script>
 
 	</body>
+
 
 
 
