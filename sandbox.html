@@ -35,18 +35,21 @@
 		<button><a href="userWebsitePreview.html" target="_blank">Open In New Tab</button>
 
 	<script>
+			if (localStorage.getItem("HTMLCode")) {	
+				document.getElementById("codeHTML").value = localStorage.getItem("HTMLCode"); 
+			}
+		
 			document.getElementById("HTMLCodeSandbox").
 				addEventListener("submit", updateCode)
 	
 			function updateCode() {
 				let code = document.getElementById("codeHTML").value;
-				window.alert(code);
 				localStorage.setItem("HTMLCode", code);
-				window.alert(localStorage.getItem("HTMLCode"));
 			}
 	</script>
 
 	</body>
+
 
 
 
