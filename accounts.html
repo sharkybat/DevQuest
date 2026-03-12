@@ -2,7 +2,6 @@
 	<head>
 		<!-- Title -->
 		<title>DevQuest</title>
-		
 		<!-- Styles Link -->
 		<link href="CSS/styles.css" rel="stylesheet" type="text/css" media="all">
 		
@@ -15,16 +14,16 @@
 	
 	<nav class='fadein'>
 		<a href="index.html">Landing Page</a>
-		<a href="accounts.html">Sign Up / Log In</a>
+		<a href="accounts.html">Create Guest Account</a>
 	</nav>
 	
 	<body class='fadein'>
 	<h1> Create Guest Account </h1>
 	<p>
-		<form action="accountValidation.php" method="get">
+		<form onsubmit="test()" action="index.html" method="post" id="GuestAccountForm">
 		  <div class="container">
-			<label for="uname"><h3><b>Username</b></h3></label>
-			<input type="text" placeholder="Enter Username" name="uname" required>
+			<label for="uname" id="guestUsername"><h3><b>Username</b></h3></label>
+			<input type="text" placeholder="Enter Username" id="guestuname" name="uname" required>
 			<br>
 			<button type="submit">Login</button>
 			<label>
@@ -32,6 +31,16 @@
 			</label>
 		  </div>
 		</form>
+		
+		<script>
+			document.getElementById("GuestAccountForm").
+				addEventListener("submit", submitInfo)
+			
+			function test() {
+				let guestUsername = document.getElementById("guestuname").value;
+				window.alert(guestUsername);
+			}
+		</script>
 	</p>
 
 	</body>
