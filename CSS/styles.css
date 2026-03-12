@@ -1,4 +1,4 @@
-#preview {
+.websitePreview {
   display: inline;
   background: white;
   color: black;
@@ -150,5 +150,6 @@ html, body {
   from {opacity: .4}
   to {opacity: 1}
 }
+
 
 
