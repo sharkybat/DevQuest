@@ -1,3 +1,13 @@
+#preview {
+  display: inline-block;
+  background: white;
+  color: black;
+  font-family: serif;
+}
+
+#codeHTML {
+  display: inline-block:
+}
 
 body {
   background-color: #353D34;
@@ -140,3 +150,4 @@ html, body {
   from {opacity: .4}
   to {opacity: 1}
 }
+
