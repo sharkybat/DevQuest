@@ -1,2 +1,0 @@
-AddHandler fcgid-script .html
-FcgidWrapper "/dh/cgi-system/php84.cgi" .html
