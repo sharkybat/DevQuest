@@ -1,12 +1,12 @@
 #preview {
-  display: inline-block;
+  display: inline;
   background: white;
   color: black;
   font-family: serif;
 }
 
 #codeHTML {
-  display: inline-block:
+  display: inline;
 }
 
 body {
@@ -150,4 +150,5 @@ html, body {
   from {opacity: .4}
   to {opacity: 1}
 }
+
 
