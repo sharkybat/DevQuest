@@ -5,7 +5,15 @@ body {
   font-family: datatype;
 }
 
-.tab a {
+#1 a {
+  color: black;
+}
+
+#2 a {
+  color: black;
+}
+
+#3 a {
   color: black;
 }
 
