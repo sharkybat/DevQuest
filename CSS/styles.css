@@ -5,6 +5,10 @@ body {
   font-family: datatype;
 }
 
+.tab a {
+  color: black;
+}
+
 nav {
   display: inline;
   text-align: center;
